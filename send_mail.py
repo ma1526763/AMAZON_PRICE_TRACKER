@@ -4,6 +4,7 @@ import os
 import requests
 from tkinter import messagebox
 
+
 def send_mail(message_to_send):
     message = EmailMessage()
     message['Subject'] = "AMAZON LOW PRICE"

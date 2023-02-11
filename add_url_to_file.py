@@ -17,6 +17,7 @@ def check_valid_url(url):
     soup = create_soup(url)
     return False if "Page Not Found" in soup.text else soup
 
+
 def uploading_data_to_json_file(url, price):
     try:
         with open("url_info.json", "r+") as file:

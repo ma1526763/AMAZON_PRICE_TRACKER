@@ -30,7 +30,7 @@ def cheap_product_info(soup, low_price, url):
     if price <= low_price:
         product_title = soup.find(id="productTitle").text.strip()
         rating = soup.select_one('.a-icon-alt').text.split()[0]
-        message_to_send += f"PRODUCT: {product_title}\nPrice: ${price} ({round(price * d_rate, 2)}PKR)\nRating: {rating}/5\n{url}\n"
+        message_to_send += f"PRODUCT: {product_title}\nPrice: ${price} ({round(price * d_rate, 2)}PKR)\nRating: {rating}/5\n{url}\n\n\n"
 
 def track_prices():
     global d_rate

@@ -12,6 +12,7 @@ def add_url_to_json_file():
     if add_url(url_entry.get(), price_entry.get()):
         clear_gui()
 
+
 def track_all_prices():
     message_to_send = track_prices()
     if message_to_send:
